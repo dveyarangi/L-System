@@ -103,7 +103,7 @@ public class LSystem
 	{
 		// getting rule set for module label:
 		List <LProductionRule> moduleRules = rules.get( curr.label );
-		if(rules.isEmpty())
+		if(moduleRules == null || moduleRules.isEmpty())
 			throw new IllegalStateException("No rules for module " + curr.label);
 
 		// checking rules:
