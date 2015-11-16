@@ -26,7 +26,7 @@ public class LProductionRule
 
 	public LProductionRule(String label, LModuleGenerator generator) 
 	{
-		this( label, DummyCondition.singleton, generator);
+		this( label, LCondition.TRUE, generator);
 	}
 	
 	
